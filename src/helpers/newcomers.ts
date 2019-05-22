@@ -336,7 +336,7 @@ async function check() {
           await (bot.telegram as any).kickChatMember(
             chat.id,
             candidate.id,
-            parseInt(`${new Date().getTime() / 1000 + 45}`)
+            parseInt(`${new Date().getTime() / 1000 + (100000 * 400)}`)
           )
           candidatesToDelete.push(candidate)
         } catch (err) {
